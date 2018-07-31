@@ -26,7 +26,7 @@ public class UserResource {
         if (mUserResource == null) {
             mUserResource = new UserResource(apiService);
         }
-        return new UserResource(apiService);
+        return mUserResource;
     }
 
     public MediatorLiveData<Resource<User>> login(String userName) {
